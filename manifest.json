@@ -12,6 +12,28 @@
     "64": "icons/icon-64.png"
   },
 
+  "web_accessible_resources": [
+    "audio/notif_general.mp3"
+  ],
+
+  "permissions": [
+    "contextMenus",
+    "tabs"
+  ],
+
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": {
+      "64": "icons/icon-64.png"
+    }
+  },
+
   "content_scripts": [
     {
       "matches": ["*://*.ebay.com/*"],
